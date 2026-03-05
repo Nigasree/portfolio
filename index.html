@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abisha Alexander | AI Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#050816;
+--card:#0f172a;
+--text:#e2e8f0;
+--muted:#94a3b8;
+--accent:#38bdf8;
+--accent2:#22d3ee;
+--border:rgba(148,163,184,.15);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(180deg,#050816,#0a1124);color:var(--text);line-height:1.6;overflow-x:hidden}
+#progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0%;z-index:999}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:90px 0}
+nav{position:sticky;top:0;background:rgba(5,8,22,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+nav a{text-decoration:none;color:var(--muted);margin-left:18px;font-weight:500}nav a:hover{color:var(--accent)}
+.brand{font-weight:800}.brand span{color:var(--accent)}
+.hero{text-align:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;margin-bottom:20px}.hero h1 span{color:var(--accent)}
+.hero p{max-width:750px;margin:auto;color:var(--muted)}
+.badge{display:inline-block;margin-bottom:16px;padding:8px 14px;border:1px solid var(--accent);border-radius:999px;background:rgba(56,189,248,.12);color:#7dd3fc;font-weight:700}
+.hero-links{margin-top:25px}.hero-links a{margin:8px;display:inline-block;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:600;transition:.3s}
+.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#93989b}.ghost{border:1px solid var(--border);color:var(--text)}.hero-links a:hover{transform:translateY(-4px)}
+.section-title{text-align:center;font-size:2rem;margin-bottom:10px;font-weight:800}.section-sub{text-align:center;color:var(--muted);margin-bottom:40px}
+.grid{display:grid;gap:25px}.grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);padding:25px;border-radius:20px;transition:.4s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 35px rgba(56,189,248,.2);border-color:var(--accent)}
+.card h3{margin-bottom:10px}.card p{color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:10px}.pill{padding:8px 14px;border-radius:30px;background:#0a1226;border:1px solid var(--border);font-size:.9rem;transition:.3s}.pill:hover{background:var(--accent);color:#000}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:30px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;text-align:center}
+.stat .num{font-size:2rem;font-weight:800;color:var(--accent)}
+.stat .label{color:var(--muted);font-size:.9rem}
+footer{text-align:center;padding:40px 0;border-top:1px solid var(--border);color:var(--muted)}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease}.reveal.active{opacity:1;transform:none}
+.modal{position:fixed;inset:0;background:rgba(2,6,23,.75);display:none;align-items:center;justify-content:center;padding:20px;z-index:1000}
+.modal.show{display:flex}
+.modal-content{max-width:700px;width:100%;background:#0b1226;border:1px solid var(--border);border-radius:16px;padding:24px;position:relative}
+.modal-close{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer}
+.project-btn{margin-top:12px;padding:8px 12px;border:1px solid var(--border);background:#0a1226;color:var(--text);border-radius:10px;cursor:pointer}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav>
+<div class="container nav-inner">
+<div class="brand">Abisha <span>Alexander</span></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<main class="container">
+
+<section class="hero reveal">
+<div class="badge">⭐ Google Student Ambassador</div>
+<h1>I am <span>Abisha Alexander</span></h1>
+<p>
+Pre-final year B.Tech student in Artificial Intelligence and Data Science at Anna University (Arunachala College of Engineering for Women). Skilled in Machine Learning, Deep Learning, SQL, and Data Analytics with a passion for building impactful and practical technology solutions.
+</p>
+<div class="hero-links">
+<a class="primary" href="https://linkedin.com/in/abisha-alexander-79920430a" target="_blank">LinkedIn</a>
+<a class="ghost" href="https://github.com/Nigasree" target="_blank">GitHub</a>
+<a class="ghost" href="https://unstop.com/u/abishafd7024" target="_blank">Unstop</a>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num" data-target="8.7">0</div><div class="label">CGPA</div></div>
+  <div class="stat"><div class="num" data-target="6">0</div><div class="label">Million+ Transactions</div></div>
+  <div class="stat"><div class="num" data-target="10">0</div><div class="label">Technical Wins</div></div>
+  <div class="stat"><div class="num" data-target="2">0</div><div class="label">Top Hackathon Finishes</div></div>
+</div>
+</section>
+
+<section id="about" class="reveal">
+<h2 class="section-title">About Me</h2>
+<p class="section-sub">
+Google Student Ambassador | CGPA 8.7 | Hackathon Finalist (Top 5 & Top 6) | Patent Holder – HydroSense.
+Focused on innovation, teamwork, and applying AI to real-world challenges.
+</p>
+</section>
+
+<section id="skills" class="reveal">
+<h2 class="section-title">Skills</h2>
+<div class="grid grid-2">
+<div class="card">
+<h3>Technical</h3>
+<div class="pills">
+<span class="pill">Python</span>
+<span class="pill">Machine Learning</span>
+<span class="pill">Deep Learning</span>
+<span class="pill">SQL</span>
+<span class="pill">Data Analytics</span>
+</div>
+</div>
+
+<div class="card">
+<h3>Tools</h3>
+<div class="pills">
+<span class="pill">GitHub</span>
+<span class="pill">MySQL</span>
+<span class="pill">Power BI</span>
+<span class="pill">Figma</span>
+<span class="pill">Miro</span>
+<span class="pill">n8n</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="reveal">
+<h2 class="section-title">Projects</h2>
+<div class="grid grid-2">
+<div class="card">
+<h3>Smart Hotel Pricing & Automation</h3>
+<p>ML-based dynamic pricing using Random Forest with Ticketmaster API and MySQL integration.</p>
+<button class="project-btn" data-modal="modal-hotel">View Details</button>
+</div>
+
+<div class="card">
+<h3>Fraud Detection</h3>
+<p>Analyzed 6M+ transactions to detect anomalies using ML models.</p>
+<button class="project-btn" data-modal="modal-fraud">View Details</button>
+</div>
+
+<div class="card">
+<h3>HydroSense – Patent</h3>
+<p>AI-powered water quality monitoring and prediction system.</p>
+<button class="project-btn" data-modal="modal-hydro">View Details</button>
+</div>
+
+<div class="card">
+<h3>Student Analytics Dashboard</h3>
+<p>Power BI dashboard for student performance analysis with KPI tracking.</p>
+<button class="project-btn" data-modal="modal-dashboard">View Details</button>
+</div>
+</div>
+</section>
+
+<section id="contact" class="reveal">
+<h2 class="section-title">Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:abishaalexander27@gmail.com">abishaalexander27@gmail.com</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/abisha-alexander-79920430a" target="_blank">Profile</a></p>
+<p>GitHub: <a href="https://github.com/Nigasree" target="_blank">Nigasree</a></p>
+<p>Unstop: <a href="https://unstop.com/u/abishafd7024" target="_blank">Profile</a></p>
+</div>
+</section>
+
+</main>
+
+<!-- Project Modals -->
+<div class="modal" id="modal-hotel"><div class="modal-content"><button class="modal-close">×</button><h3>Smart Hotel Pricing & Automation</h3><p>Built a dynamic pricing engine using Random Forest to predict optimal room prices from historical data, events, and demand patterns. Integrated API data and MySQL for automated updates and decision support.</p></div></div>
+<div class="modal" id="modal-fraud"><div class="modal-content"><button class="modal-close">×</button><h3>Fraud Detection</h3><p>Worked with a large-scale dataset of over 6M transactions, applying ML techniques to identify suspicious behavior and support risk analysis workflows.</p></div></div>
+<div class="modal" id="modal-hydro"><div class="modal-content"><button class="modal-close">×</button><h3>HydroSense</h3><p>Patent-backed concept using AI for water quality monitoring and prediction, focused on sustainability and intelligent environmental solutions.</p></div></div>
+<div class="modal" id="modal-dashboard"><div class="modal-content"><button class="modal-close">×</button><h3>Student Analytics Dashboard</h3><p>Designed interactive dashboards with KPI cards and visual analytics to help understand student performance and patterns for better decision-making.</p></div></div>
+
+<footer>
+© 2026 Abisha Alexander
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+const winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+document.getElementById('progress').style.width=(winScroll/height)*100+'%';
+});
+
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+reveals.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-100){el.classList.add('active');}});
+});
+window.dispatchEvent(new Event('scroll'));
+
+// animated counters
+let counted=false;
+function animateCounters(){
+  if(counted) return;
+  const stats=document.querySelector('.stats');
+  if(!stats) return;
+  const top=stats.getBoundingClientRect().top;
+  if(top<window.innerHeight-80){
+    counted=true;
+    document.querySelectorAll('.num').forEach(el=>{
+      const target=parseFloat(el.dataset.target);
+      let n=0;
+      const step=target/60;
+      const timer=setInterval(()=>{
+        n+=step;
+        if(n>=target){n=target;clearInterval(timer);} 
+        el.textContent = (target===8.7)? n.toFixed(1) : Math.floor(n);
+      },20);
+    });
+  }
+}
+window.addEventListener('scroll',animateCounters);
+animateCounters();
+
+// modal popups
+const modals=document.querySelectorAll('.modal');
+document.querySelectorAll('.project-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.getElementById(btn.dataset.modal).classList.add('show');
+  });
+});
+modals.forEach(m=>{
+  m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('show');});
+  m.querySelector('.modal-close').addEventListener('click',()=>m.classList.remove('show'));
+});
+</script>
+
+</body>
+</html>
 
